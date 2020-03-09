@@ -1,60 +1,98 @@
-html{
+/* MAIN ATTRIBUTES */
+html {
     background-color: white;
     display: flex;
     justify-content: center;
 }
-a{
-    color:black !important;
+
+body {
+    display: flex;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border: 1px solid #607087
 }
+
+a {
+    color: black !important;
+}
+/* TITLES ATTRIBUTES */
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    margin-top: 4vh !important;
+
+    font-size: 15px;
+}
+
+h1,
+h2 {
+    margin-left: 5vh;
+}
+
+h3 {
+    color: #607087 !important
+}
+
 hr {
     background: #8eb9bb;
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
 }
 
-h1{
-    margin-top: 4vh !important;
+#hrTitle {
+    margin-left: 5vh;
+    margin-bottom: 5vh !important;
 }
-h1,h2{
-    margin-left: 5vh;  
-}
-h3{
-    color:  #607087 !important
-}
-table, td, th {  
+
+/* TABLES CLASSES ATTRIBUTES */
+
+table,
+td,
+th {
     text-align: left;
     vertical-align: top;
     word-wrap: break-word;
     table-layout: fixed;
     word-wrap: break-word;
 }
-td{
-    width: 30%
-}
-  
-  table {
+
+table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  th, td {
-    padding: 15px;
-  }
-
-body{
-    display: flex;
-    padding-right: 0 !important ;
-    padding-left: 0 !important ;
-    border: 1px solid  #607087
 }
-#leftSection{
+
+th,
+td {
+    padding: 15px;
+}
+
+
+#leftTd {
+    margin-left: 4vw;
+}
+
+#leftTd::before {
+    content: "\2022";
+    color: #8eb9bb;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+/* LEFT SECTION CLASSES ATTRIBUTES */
+
+#leftSection {
     background-color: #8eb9bb;
-    padding-right: 0px  !important;
-    padding-left: 0px  !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
     display: flex;
     flex-direction: column;
 }
-#portrait{
+
+#portrait {
     height: auto;
     width: 50%;
     margin-left: auto;
@@ -62,7 +100,8 @@ body{
     margin-top: 3vh;
     margin-bottom: 2vh
 }
-#portraitMobile{
+
+#portraitMobile {
     height: auto;
     width: 50%;
     margin-left: auto;
@@ -71,73 +110,80 @@ body{
     margin-bottom: 2vh;
     display: none;
 }
-#contact{
+
+#contact {
     margin-left: 10%;
 }
-#titleContact{
+
+#titleContact {
     text-align: center;
     background-color: #607087;
-  color: #8eb9bb !important
+    color: #8eb9bb !important
 }
-#subtitlesContact{
+
+#subtitlesContact {
     margin-top: 1vh
 }
 
-#aboutMe{    
+#email {
+    word-break: break-all;
+    padding: 2px;
 }
-#aboutMeDescription{
-    padding-right: 4vh  !important;
-    padding-left: 4vh  !important;
-    margin-top: 5vh;
-    text-align: justify
+
+#aboutMeDescription {
+
+    margin-top: 4vh;
+    text-align: left;
+    padding-right: 4vh !important;
+    padding-left: 4vh !important;
 }
-#hobbies{
+
+#hobbies {
     margin-top: auto;
 }
-#hobbiesList{
-    list-style-type:none;
+.fa-gamepad,
+.fa-basketball-ball,
+.fa-table-tennis {
+    color: #607087;
+    font-size: 40px;
+    margin-top: 1rem;
+}
+#hobbiesList {
+    list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding: 0;
 }
-#rightSection{
-}
-#formation{ 
-}
-#experience{
-    
-}
-#recommandations{
-    
-}
-#recommandationName{
+/* RIGHT SECTION CLASSES ATTRIBUTES */
+
+#recommandationName {
     margin-top: 3vh !important;
 }
-#hrTitle{
-    margin-left: 5vh;
-    margin-bottom: 5vh  !important;
+
+#prenom {
+    color: #8eb9bb;
+    background-color: #fff;
 }
- .fa-graduation-cap, .fa-briefcase, .fa-pen {
+
+
+.fa-graduation-cap,
+.fa-briefcase,
+.fa-pen {
     font-size: 20px;
     line-height: 3 !important;
     color: #8eb9bb;
     margin-right: 1rem;
     margin-left: 1rem;
-} 
-
-.fa-gamepad, .fa-basketball-ball, .fa-table-tennis {
-    color: #607087;
-    font-size: 40px;
-    margin-top: 1rem;
 }
 
-
-
 @media (max-width: 640px) {
+
     /* CSS mobile ici */
-    #portrait{
+    #portrait {
         display: none;
     }
-    #portraitMobile{
+
+    #portraitMobile {
         display: block;
     }
-    }
+}
