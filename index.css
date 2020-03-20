@@ -182,7 +182,10 @@ td {
     background-color: #fff;
 }
 
-
+.fa-dot-circle-o{
+    margin-right: 1vw;
+    color: #8eb9bb;
+}
 .fa-graduation-cap,
 .fa-briefcase,
 .fa-pen {
