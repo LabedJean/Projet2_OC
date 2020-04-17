@@ -61,8 +61,13 @@ th {
 }
 
 table {
-    border-collapse: collapse;
     width: 100%;
+    display: flex;
+    flex-direction: column ;
+}
+#tableContainer{
+    display: flex;
+    flex-direction: row;
 }
 
 th,
@@ -70,14 +75,24 @@ td {
     padding: 15px;
 }
 
-
+#trRecommandations{
+    display:flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+#thRecommandations{
+    padding-left: 2vw;
+}
 #leftTd {
     margin-left: 4vw;
+    width: 22vw;
+
 }
 #leftTdFirst{
     display: flex;
     align-items: center; 
-    padding-left: 11px
+    padding-left: 11px;
+    width: 22vw;
 }
 
 #leftTd::before {
@@ -205,5 +220,33 @@ td {
 
     #portraitMobile {
         display: block;
+    }
+    #leftTd {
+        width: 300px;
+        margin-left: 4vw;
+        text-decoration: underline;
+        text-align: center;
+    }
+    #leftTdFirst{
+        width: 300px;
+        display: flex;
+        align-items: center; 
+        padding-left: 88px;
+        text-decoration: underline;
+        text-align: center
+    }
+    tr{
+        display:flex;
+        flex-direction: column;
+    }
+    td{
+        text-align: center;
+    }
+    #hobbies{
+        margin-bottom: 0;
+    }
+    #tableContainer{
+        display: flex;
+        flex-direction: column;
     }
 }

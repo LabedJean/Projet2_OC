@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="curriculum vitae cv Jean Labed" />
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+        <link rel="shortcut icon" type="image/png" href="./cv.png">
     <title>CV Jean Labed</title>
 </head>
 
@@ -21,13 +22,13 @@
         <h3 id="titleContact">CONTACT</h3>
         <article id="contact">
             <!--CONTACT-->
-            <address>
+            <address title="home">
                 <h5 id="subtitlesContact">Adresse</h5>
                 <em>Salon-de-Provence France</em>
                 <h5 id="subtitlesContact">Téléphone</h5>
                 <a href="tel:+33682743899">06 82 74 38 99</a>
                 <h5 id="subtitlesContact">Email</h5>
-                <a id="email" href="jeanlabedwcs@gmail.com">Jeanlabedwcs@gmail.com</a>
+                <a id="email" href="mailto:jeanlabedwcs@gmail.com">Jeanlabedwcs@gmail.com</a>
             </address>
 
         </article>
@@ -65,21 +66,21 @@
             <hr />
             <table>
                 <tbody>
-                    <tr>
+                    <tr >
                         <td id="leftTdFirst"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> 2020-2021</td>
-                        <td>
+                        <td id="rightTd">
                             <h6>OpenClassRooms</h6> Développeur web Junior<br> Formation en ligne
                         </td>
                     </tr>
                     <tr>
                         <td id="leftTd">2019-2020 | Marseille</td>
-                        <td>
+                        <td id="rightTd">
                             <h6> Wild Code School</h6> Développeur web & web mobile <br> Formation de 5 mois
                         </td>
                     </tr>
                     <tr>
                         <td id="leftTd">2013</td>
-                        <td>
+                        <td id="rightTd">
                             <h6>CNED</h6> Baccalauréat Economique et Social
                         </td>
                     </tr>
@@ -94,27 +95,27 @@
                 <tbody>
                     <tr>
                         <td id="leftTdFirst"> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Juin 2019 | Marseille </td>
-                        <td>
+                        <td id="rightTd">
                             <h6> Hackaton Dataweek</h6> HandiPaca, application sur le thème de l'accessibilité
                         </td>
                     </tr>
                     <tr>
                         <td id="leftTd">Juin - Juillet 2019 | Marseille</td>
-                        <td>
+                        <td id="rightTd">
                             <h6>Développeur front-end </h6><br> Wild Code School - Projet d'étude C.G.B Creative :
                             Wavager, application mobile React Native, Redux, MySQL, React, Adobe XD
                         </td>
                     </tr>
                     <tr>
                         <td id="leftTd">Juin - Juillet 2019 | Marseille</td>
-                        <td>
+                        <td id="rightTd">
                             <h6>Développeur front-end</h6> <br> Wild Code School - Projet d'étude>Hackathon : Find the
                             Eggious, sur le thème de Pâques. HTML5, CSS3, SCSS, Github, React
                         </td>
                     </tr>
                     <tr>
                         <td id="leftTd">Mai 2019 | Marseille</td>
-                        <td>
+                        <td id="rightTd">
                             <h6>Développeur front-end</h6><br> Wild Code School - Projet d'étude ISA, site dynamique
                             localisant la position de l’ISS en temps réel > HTML5, CSS3, Bootstrap4, Git, Github,
                             JavaScript, React, ReactStrap, LeafletAPI
@@ -122,14 +123,14 @@
                     </tr>
                     <tr>
                         <td id="leftTd">Mars 2019 | Marseille</td>
-                        <td>
+                        <td id="rightTd">
                             <h6>Développeur front-end</h6><br> Wild Code School - Projet d'étude Word Wild Web, site
                             statique sur le thème du green web. HTML5, CSS3, Bootstrap4, Git, Github
-                        </td>
+                        </td id="rightTd">
                     </tr>
                     <tr>
                         <td id="leftTd">2013 - 2018 | Salon-De-Provence</td>
-                        <td>
+                        <td id="rightTd">
                             <h6>Responsable de salle </h6>"Le café des arts" <br> Gestion d'équipe, gestion des stocks.
                         </td>
                     </tr>
@@ -140,22 +141,36 @@
             <!--  RECOMMANDATIONS -->
             <h3><i class="fas fa-pen"></i>Recommandations</h3>
             <hr />
+            <div id="tableContainer">
             <table>
                 <thead>
-                    <tr>
-                        <th>Guillaume Dieudonné | Formateur</th>
-                        <th>David Marie | Formateur</th>
-                    </tr>
-                </thead>
+                    <th id="thRecommandations">Guillaume Dieudonné | Formateur</th>                       
+                </thead>                    
                 <tbody>
-                    <tr>
-                        <td> J'ai eu l'occasion de travailler avec Jean dans le cadre de sa formation JavaScript à la
+                    <tr id="trRecommandations">
+                        <td>
+                            J'ai eu l'occasion de travailler avec Jean dans le cadre de sa formation JavaScript à la
                             Wild code School Marseille.
                             Il a su très rapidement s'approprier des technologies et frameworks complexes tels que React
                             et React Native et a su évoluer avec beaucoup d'autonomie sur les différents modules du
                             projet (app mobile React Native, back office React et API NodeJs + ExpressJs).
                         </td>
-                        <td>J'ai particulièrement apprécié sa motivation, sa curiosité et sa capacité à s'intégrer dans
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th id="thRecommandations">David Marie | Formateur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            J'ai particulièrement apprécié sa motivation, sa curiosité et sa capacité à s'intégrer dans
                             une équipe tant sur la partie technique que sur la partie UI/UX.
 
                             Jean est sans aucun doute un excellent Dev JS en devenir et je n'ai aucun doute sur sa
@@ -165,6 +180,7 @@
 
                 </tbody>
             </table>
+        </div>
         </article>
     </section>
     <!-- SCRIPTS -->
