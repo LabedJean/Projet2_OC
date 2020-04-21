@@ -42,7 +42,7 @@ hr {
     margin-bottom: 0.5rem !important;
 }
 
-#hrTitle {
+.hrTitle {
     margin-left: 5vh;
     margin-bottom: 5vh !important;
     width: 15%;
@@ -65,7 +65,7 @@ table {
     display: flex;
     flex-direction: column ;
 }
-#tableContainer{
+.tableContainer{
     display: flex;
     flex-direction: row;
 }
@@ -75,26 +75,26 @@ td {
     padding: 15px;
 }
 
-#trRecommandations{
+.trRecommandations{
     display:flex;
     flex-direction: row;
 }
-#thRecommandations{
+.thRecommandations{
     padding-left: 2vw;
 }
-#leftTd {
+.leftTd {
     margin-left: 4vw;
     width: 22vw;
 
 }
-#leftTdFirst{
+.leftTdFirst{
     display: flex;
     align-items: center; 
     padding-left: 11px;
     width: 22vw;
 }
 
-#leftTd::before {
+.leftTd::before {
     content: "\2022";
     color: #8eb9bb;
     font-weight: bold;
@@ -113,7 +113,7 @@ td {
 
 /* LEFT SECTION CLASSES ATTRIBUTES */
 
-#leftSection {
+.leftSection {
     background-color: #8eb9bb;
     padding-right: 0px !important;
     padding-left: 0px !important;
@@ -121,7 +121,7 @@ td {
     flex-direction: column;
 }
 
-#portrait {
+.portrait {
     height: auto;
     width: 50%;
     margin-left: auto;
@@ -130,7 +130,7 @@ td {
     margin-bottom: 2vh
 }
 
-#portraitMobile {
+.portraitMobile {
     height: auto;
     width: 50%;
     margin-left: auto;
@@ -140,26 +140,26 @@ td {
     display: none;
 }
 
-#contact {
+.contact {
     margin-left: 10%;
 }
 
-#titleContact {
+.titleContact {
     text-align: center;
     background-color: #607087;
     color: #8eb9bb !important
 }
 
-#subtitlesContact {
+.subtitlesContact {
     margin-top: 1vh
 }
 
-#email {
+.email {
     word-break: break-all;
     padding: 2px;
 }
 
-#aboutMeDescription {
+.aboutMeDescription {
 
     margin-top: 4vh;
     text-align: left;
@@ -167,7 +167,7 @@ td {
     padding-left: 4vh !important;
 }
 
-#hobbies {
+.hobbies {
     margin-top: auto;
     margin-bottom: 30vh
 }
@@ -178,7 +178,7 @@ td {
     font-size: 40px;
     margin-top: 1rem;
 }
-#hobbiesList {
+.hobbiesList {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -187,18 +187,18 @@ td {
 }
 /* RIGHT SECTION CLASSES ATTRIBUTES */
 
-#recommandationName {
+.recommandationName {
     margin-top: 3vh !important;
 }
 
-#prenom {
+.prenom {
     color: #8eb9bb;
     background-color: #fff;
 }
 
 .fa-dot-circle-o{
     margin-right: 1vw;
-    color: #8eb9bb;
+    color:#8eb9bb;
 }
 .fa-graduation-cap,
 .fa-briefcase,
@@ -213,20 +213,20 @@ td {
 @media (max-width: 640px) {
 
     /* CSS mobile ici */
-    #portrait {
+    .portrait {
         display: none;
     }
 
-    #portraitMobile {
+    .portraitMobile {
         display: block;
     }
-    #leftTd {
+    .leftTd {
         width: 300px;
         margin-left: 4vw;
         text-decoration: underline;
         text-align: center;
     }
-    #leftTdFirst{
+    .leftTdFirst{
         width: 300px;
         display: flex;
         align-items: center; 
@@ -241,10 +241,10 @@ td {
     td{
         text-align: center;
     }
-    #hobbies{
+    .hobbies{
         margin-bottom: 0;
     }
-    #tableContainer{
+    .tableContainer{
         display: flex;
         flex-direction: column;
     }
