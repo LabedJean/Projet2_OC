@@ -1,0 +1,3 @@
+Voice les liens demandés pour le Projet 2 :
+ Repository GITHUB :   https://github.com/LabedJean/Projet2_OC
+ Site :    https://labedjean.github.io/Projet2_OC/
